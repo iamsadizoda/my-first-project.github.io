@@ -1,0 +1,146 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+/* Tana (body) stili */
+body {
+    background-image: url('Broccoli1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar (Menyu) */
+.navbar {
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    background-color: #324a3a6a;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 10px rgba(35, 104, 30, 0.237);
+}
+
+.logo {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #fffdfd;
+}
+
+/* Tugmalarni yonma-yon qilish */
+.nav-links {
+    display: flex;
+    gap: 15px; /* Tugmalar orasidagi masofa */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+}
+
+.nav-btn a {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color: #aad57f8e;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn a:hover {
+    background-color: #315e2f9c;
+}
+
+/* Asosiy bo'lim (Hero section) */
+.hero {
+    padding: 60px 20px;
+    font-family: 'Times New Roman';
+}
+
+.main-heading {
+    color: #fffdfd;
+    font-size: 50px;
+    margin-top: 50x;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fffdfd;
+}
+
+.contract-address {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fffdfd;
+}
+
+/* Media Query: Kichik ekranlar uchun moslashuvchanlik */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap; /* Tugmalar kichik ekranda pastga tushishi uchun */
+        justify-content: center;
+    }
+
+    .main-heading {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .contract-address {
+        font-size: 12px;
+    }
+}
+
+/* Media Query: Mobil qurilmalar uchun moslashuvchanlik */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 32px;
+    }
+
+    .nav-btn a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .hero {
+        padding: 50px 10px;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
